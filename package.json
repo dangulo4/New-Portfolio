@@ -1,0 +1,22 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "responsive portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangulo4/New-Portfolio.git"
+  },
+  "author": "Daniel Angulo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangulo4/New-Portfolio/issues"
+  },
+  "homepage": "https://github.com/dangulo4/New-Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
