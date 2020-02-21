@@ -47,7 +47,7 @@ body {
 .portrait {
     width: 300px;
     height: 300px;
-    background: url(/images/headshot2.jpg);
+    background: url(../images/headshot.jpg);
     border-radius: 50%;
     border: solid 3px $secondary-color;
 }
@@ -145,7 +145,7 @@ main {
         align-items: center;
         justify-content: center;
         float: left;
-        width: 25%;
+        width: 50%;
         height: 100vh;
         overflow: hidden;
     }
