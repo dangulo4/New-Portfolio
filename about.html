@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
     <!--Adding style sheet: reset-->
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <!--Adding jquery, bootstrap-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -20,11 +20,11 @@
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <!--The begging of the body-->
 
-<body class="box-set">
+<body>
     <!--Nav bar with collapse feature-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -39,19 +39,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link current" href="about.html">About Me</a>
+                </li>                    
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h2 id="headerTwoText">About Me</h2>
@@ -97,12 +100,78 @@
 
         </div>
 
+    </div> -->
+    <nav class="menu">
+        <div class="menu-branding">
+            
+        </div>
+        <!-- <ul class="menu-nav">
+            
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link Current">
+                    About Me
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="portfolio.html" class="nav-link">
+                    Portfolio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul> -->
+    </nav>
+</header>
+
+<main id="about">
+    
+    <h1 class="lg-heading">
+        About <span class="text-secondary">Me</span>
+        
+    </h1>
+    
+    <h2 class="sm-heading">
+        Lets connect...
+    </h2>
+    <div class="about-info">
+        <img src="images/headshot.jpg" alt="Daniel Angulo" class="bio-image">
+
+        <div class="bio">
+            <h3 class="text-secondary">Background</h3>
+            <p>Hello, my name is Daniel. I am an aspiring Web Developer eager to start my new career as a web development. Currently, I speak the following languages:HTML, CSS, Javascript, Node JS, and SQL</p>
+        </div>
+        <div class="job job-1">
+            <h3>123 Web</h3>
+            <h5>Position</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis ea iure soluta facere perspiciatis nisi, libero, distinctio quos laudantium in ad voluptates non, expedita repellendus amet quam at fugit.</p>
+        </div>
+        <div class="job job-2">
+            <h3>123 Web</h3>
+            <h5>Position</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis ea iure soluta facere perspiciatis nisi, libero, distinctio quos laudantium in ad voluptates non, expedita repellendus amet quam at fugit.</p>
+        </div>
+        <div class="job job-3">
+            <h3>123 Web</h3>
+            <h5>Position</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis ea iure soluta facere perspiciatis nisi, libero, distinctio quos laudantium in ad voluptates non, expedita repellendus amet quam at fugit.</p>
+        </div>
     </div>
-    <!--second container to hold horizontal line and footer-->
-    <div id="container2">
-        <hr id="container-line" class="col-md-12">
-        <footer id="footer" class="col-md-12">Copyright &#169;</footer>
-    </div>
+</main>
+
+<footer id="main-footer">
+    copyright&copy; 2020
+</footer>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+<script src="script.js"></script>
+   
 </body>
 
 </html>

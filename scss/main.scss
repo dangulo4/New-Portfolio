@@ -81,12 +81,12 @@ header {
 
 
 .text-secondary {
-    color: $secondary-color;
+    color: $secondary-color !important;
 }
 
 main {
     padding: 4rem;
-    height: 100;
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-top: 1rem;
@@ -173,31 +173,74 @@ main {
             transform: translate3d(0, 0, 0);
         }
     }
+
+    .nav-item {
+        &.current > a {
+            color: $secondary-color;
+        }
+    }
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        padding: 1rem;
+        font-weight: 100;
+        color:#fff;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.about-info{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas: 'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
 }
     
-// @include mediaSm {
-//     @media screen and (max-width: 500px){
-//         @content;
-//     }
-// }
+.bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+}
 
-// @include mediaMd {
-//     @media screen and (max-width: 768px){
-//         @content;
-//     }
-// }
+.job-1 {
+    grid-area: job1
+}
 
-// @include mediaLg {
-//     @media screen and (min-width: 769px) and (max-width: 1170px){
-//         @content;
-//     }
-// }
+.job-2 {
+    grid-area: job2
+}
 
-// @include mediaXl {
-//     @media screen and (min-width: 1171px){
-//         @content;
-//     }
-// }
+.job-3 {
+    grid-area: job3
+}
+
+.job {
+    background: rgba(lighten($primary-color, 2.5),0.5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+
+}
 
 // Widescreens
 @media screen and (min-width: 1171px){
@@ -291,22 +334,3 @@ main {
        
 
   
-  
-//   // Desktops & Laptops
-//   @include mediaLg {
-//     .projects {
-//       grid-template-columns: repeat(3, 1fr);
-//     }
-//   }
-  
-//   // Tablets & Small Laptops
-//   @include mediaMd {
-//     main {
-//       align-items: center;
-//       text-align: center;
-  
-//       .lg-heading {
-//         line-height: 1;
-//         margin-bottom: 1rem;
-//       }
-//     }
