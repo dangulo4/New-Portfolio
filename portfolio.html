@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
   <!--Adding style sheet: reset-->
   <link rel="stylesheet" href="css/reset.css">
   <!--Adding jquery, bootstrap-->
@@ -20,11 +21,12 @@
   </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Portfolio</title>
 </head>
 <!--Nav bar with collapse feature-->
 
-<body class="box-set">
+<body id="bg-img-about">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a id="navbarheader" class="navbar-brand" href="index.html">Daniel Angulo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -46,52 +48,73 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 id="headerTwoText">Portfolio</h2>
-      </div>
+  <nav class="menu">
+    <div class="menu-branding">
     </div>
+</nav>
+</header>
+<main id="portfolio">
+    <h1 class="lg-heading">
+        This is my <span class="text-secondary">Portfolio</span>
+    </h1>
+    <h2 class="sm-heading">
+        My current projects
+    </h2>
+    <!-- <div class="projects"></div> -->
     <div class="card-group">
       <div class="card">
         <img id="cardImage" src="images/pic2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">10 Skills as a front end developer</h5>
-          <p class="card-text">1. HTML/CSS,<br>2. Javascript/JQuery<br>3. CSS and Javascript Framework<br>
-            4. CSS Preprocessing<br>5. Version Control/GIT<br>6. Responsive Design<br>
-            7. Testing/Debugging<br>8. Browser Developer Tools<br>9. Web Performance<br>
-            10. Command Line</p>
-          <p class="card-text"><small class="text-muted">Last updated 2 weeks ago</small></p>
+          <h5 class="card-title">B2B App Finder</h5>
+          <div class="item">
+            <!-- <a href="#!"></a> -->
+            <a href="https://alexiachalita.github.io/project1/" class="btn-light">
+              <i class="fas fa-eye">B2B App Finder</i>
+            </a>
+            <a href="https://github.com/alexiachalita/project1" class="btn-dark">
+              <i class="fab fa-github">Github</i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="card">
         <img id="cardImage" src="images/pic5.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Responsive Web design</h5>
-          <p class="card-text">Understanding of responsive design principles and how to implement
-            them on the coding side. Responsive design is an intrinsic part of CSS frameworks like
-            the aforementioned Bootstrap.</p>
-          <p class="card-text"><small class="text-muted">Last updated 1 month ago</small></p>
+          <h5 class="card-title">Password Generator</h5>
+          <div class="item">
+            <!-- <a href="#!"></a> -->
+            <a href="https://dangulo4.github.io/PasswordGenerator/" class="btn-light">
+              <i class="fas fa-eye">Password Generator</i>
+            </a>
+            <a href="https://github.com/dangulo4/PasswordGenerator" class="btn-dark">
+              <i class="fab fa-github">Github</i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="card">
-        <img id="cardImage" src="images/pic6.jpg" class="card-img-top" alt="...">
+        <img id="cardImage" src="images/weather.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Database Modeling</h5>
-          <p class="card-text">Work with clinical and non-clinical clients designing a reporting
-            infrastructure to meet organizational and operational requirements. Supports existing
-            tools and adoption of standard strategic tools to support the Data Warehouse.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 weeks ago</small></p>
+          <h5 class="card-title">WeatherDashboard</h5>
+          <div class="item">
+            <!-- <a href="#!"></a> -->
+            <a href="https://dangulo4.github.io/WeatherDashboard/" class="btn-light">
+              <i class="fas fa-eye">Weather Dashboard</i>
+            </a>
+            <a href="https://github.com/dangulo4/WeatherDashboard" class="btn-dark">
+              <i class="fab fa-github">Github</i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--second container to hold horizontal line and footer-->
-  <footer id="main-footer">
-    copyright&copy; 2020
-  </footer>
+</main>
 
-  <script src="script.js"></script>
+<footer id="main-footer">
+    copyright&copy; 2020
+</footer>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+<script src="script.js"></script>
 </body>
 
 </html>

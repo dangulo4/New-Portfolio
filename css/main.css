@@ -175,6 +175,23 @@ main {
   padding: 0.5rem;
   border-bottom: #6877a0 5px solid; }
 
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1 rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #6877a0;
+    color: set-text-color(#6877a0); }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
