@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <title>Contact Me</title>
      <!--Adding style sheet: reset-->
      <link rel="stylesheet" href="css/reset.css">
      <!--Adding jquery, bootstrap-->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+         integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+     </script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+     </script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/main.css">
 </head>
 <!--Nav bar with collapse feature-->
-<body class="box-set">
+<body class="bg-img">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a id="navbarheader" class="navbar-brand" href="index.html">Daniel Angulo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -26,20 +32,44 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
+    <nav class="menu">
+        <div class="menu-branding">
+        </div>
+    </nav>
+    </header>
+    <main id="contact">
+        <h1 class="lg-heading">
+            Contact <span class="text-secondary">Me</span>
+        </h1>
+        <h2 class="sm-heading">
+            Send me a message...
+        </h2>
+        <div class="contact-container">
+            <div>
+                <span class="text-secondary">My Email:</span> dangulo4@gmail.com
+            </div>
+            <div>
+                <span class="text-secondary">Phone:</span> 714-422-4998
+            </div>
+        </div>
+    </main>
     <!--Container section that holds main content-->
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div id="headerTwoText" class="col-md-12">
                 <h2>Contact</h2>
@@ -105,11 +135,10 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--second container to hold horizontal line and footer-->
-    <div id="container2">
-        <hr id="container-line" class="col-md-12">
-        <footer id="footer" class="col-md-12">Copyright &#169;</footer>
-    </div>
+    <footer id="main-footer">
+        copyright&copy; 2020
+    </footer>
 </body>
 </html>
