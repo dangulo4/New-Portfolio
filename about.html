@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +23,7 @@
 </head>
 <!--The begging of the body-->
 
-<body>
+<body id="bg-img-about">
     <!--Nav bar with collapse feature-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -43,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link current" href="about.html">About Me</a>
-                </li>                    
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
@@ -53,125 +52,70 @@
             </ul>
         </div>
     </nav>
-
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 id="headerTwoText">About Me</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr id="bio-line">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <img id="smallpic" class="headshot img-thumbnail" src="images/headshot.jpg">
-            </div>
-            <div class="col-md-9">
-                <p id="firstP" class="context"> Hello, my name is Daniel. I am an aspiring Web Developer with one month
-                    of experience in web development. Currently, I speak the following languages: <span
-                        id="webLanguage">HTML, CSS, Javascript, and SQL</span>.
-                    Over the past 10 years I have worked both as a Business Intellegince Analyst,
-                    and a Financial Analyst within healthcare. During that time I’ve learned and become expert in
-                    various software
-                    platforms and system such as SQL Server Management Studios, IBM Cognos, Alteryx, Axiom, Microsoft
-                    Access and Excel.
-                    I would describe myself as a person with a versatile skill-set, a lot of integrity and a willingness
-                    to go the extra mile to satisfy a customer. Perhaps the best way to let you know what I'm about is
-                    to
-                    share with you my profile page</p>
-
-                <p class="context">Some of my favorite hobbies are renovating classic cars where I can sharping my
-                    mechanical skills. Other passions include living a healthy lifestyle with like minded friends.
-                    Lastly, my
-                    greatest passion is sudying and listening to early turn of the century music in the genre of jazz
-                    and country music. </p>
-
-                <p class="context"> One of my short term goals is to work as a software developer where I can be part of
-                    a team that will allow me to focus my energy on my beststrength, working directly with data
-                    structure and design. I’d like to build
-                    a long term career that lets me focus on professional growth.</p>
-
-                <p class="context"> <span id="brand">I strive for clean content and simple structure with thoughtful
-                        design.</span> </p>
-            </div>
-
-        </div>
-
-    </div> -->
     <nav class="menu">
         <div class="menu-branding">
-            
         </div>
-        <!-- <ul class="menu-nav">
-            
-            <li class="nav-item">
-                <a href="/" class="nav-link">
-                    Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="nav-link Current">
-                    About Me
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="portfolio.html" class="nav-link">
-                    Portfolio
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">
-                    Contact
-                </a>
-            </li>
-        </ul> -->
     </nav>
-</header>
+    </header>
+    <main id="about">
+        <h1 class="lg-heading">
+            About <span class="text-secondary">Me</span>
+        </h1>
+        <h2 class="sm-heading">
+            Lets connect...
+        </h2>
+        <div class="about-info">
+            <img src="../images/headshot.jpg" alt="Daniel Angulo" class="bio-image">
 
-<main id="about">
-    
-    <h1 class="lg-heading">
-        About <span class="text-secondary">Me</span>
-        
-    </h1>
-    
-    <h2 class="sm-heading">
-        Lets connect...
-    </h2>
-    <div class="about-info">
-        <img src="images/headshot.jpg" alt="Daniel Angulo" class="bio-image">
+            <div class="bio">
+                <h3 class="text-secondary">Introduction</h3>
+                <p>Hello, my name is Daniel. I am an aspiring Web Developer eager to start my new career as a web
+                    developer. My passion to problem solve and has lead me to workwith clients where I create clean
+                    content with simple structure and thoughtful design. Curerntly, I speak the following languages:
+                    HTML, CSS, Javascript, Node JS, and SQL</p>
+            </div>
+            <div class="job job-1">
+                <h3>Sharp Grossmont Hospital</h3>
+                <h5>Decesion Support Analyst</h5>
+                <h6>December 2018 - current</h6>
+                <p>Collaborate with team members in Administration, Finance and Clinical Analytics. Serve as a resource
+                    for the executive team for data management, analysis, presentation and clinical/financial decision
+                    support. Interpret Clinical and Financial data to support system wide initiatives such as business
+                    development, The Sharp Experience, Lean Six Sigma, and Quality and Patient Safety.</p>
+            </div>
+            <div class="job job-2">
+                <h3>Sharp Healthcare</h3>
+                <h5>Business Intellegince Analyst</h5>
+                <h6>April 2016 - December 2018</h6>
+                <p>Responsible for implementation, integration and expansion of existing data warehouse. Lead IT role in
+                    various projects throughout the SDLC to ensure client expectations are accomplished. Data profile
+                    for ETL into existing data warehouse. Developed a workflow using Alteryx BI Tool for analytical
+                    compliance review against P4P Measures (Largest non-governmental physician incentive program) to
+                    increase efficiency.Translate client request into functional and technical specifications as part of
+                    SDLC. Collaborate with clinical and non-clinical clients designing a reporting infrastructure to
+                    meet organizational and operational needs. Perform data analysis on existing and new data using both
+                    PL SQL and T-SQL. Experience in 24x7-enterprise level production system and database support.</p>
+            </div>
+            <div class="job job-3">
+                <h3>Sharp Healthcare</h3>
+                <h5>Sr Financial Analyst</h5>
+                <p>Developed a financial model to calculate costing RVU’s for 72 departments by cost-center. Maintain
+                    data integrity within the EPSi cost accounting and budget system for monthly reporting. Liaison
+                    between Finance entities and Allscripts support. Validate monthly general ledger and payroll data to
+                    feed into cost accounting system using MS Access, Excel, and Visual Basic scripts.Collaborate with
+                    IT, to identify expansion of EPSi cost account system, lead all testing efforts,communicate
+                    effectively, and ensure seamless implementation into production within a reasonable timeframe of
+                    issue submitted.</p>
+            </div>
+        </div>
+    </main>
 
-        <div class="bio">
-            <h3 class="text-secondary">Background</h3>
-            <p>Hello, my name is Daniel. I am an aspiring Web Developer eager to start my new career as a web development. Currently, I speak the following languages:HTML, CSS, Javascript, Node JS, and SQL</p>
-        </div>
-        <div class="job job-1">
-            <h3>123 Web</h3>
-            <h5>Position</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis ea iure soluta facere perspiciatis nisi, libero, distinctio quos laudantium in ad voluptates non, expedita repellendus amet quam at fugit.</p>
-        </div>
-        <div class="job job-2">
-            <h3>123 Web</h3>
-            <h5>Position</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis ea iure soluta facere perspiciatis nisi, libero, distinctio quos laudantium in ad voluptates non, expedita repellendus amet quam at fugit.</p>
-        </div>
-        <div class="job job-3">
-            <h3>123 Web</h3>
-            <h5>Position</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis ea iure soluta facere perspiciatis nisi, libero, distinctio quos laudantium in ad voluptates non, expedita repellendus amet quam at fugit.</p>
-        </div>
-    </div>
-</main>
+    <footer id="main-footer">
+        copyright&copy; 2020
+    </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+    <script src="script.js"></script>
 
-<footer id="main-footer">
-    copyright&copy; 2020
-</footer>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
-<script src="script.js"></script>
-   
 </body>
 
 </html>

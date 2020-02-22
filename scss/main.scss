@@ -2,6 +2,7 @@ $primary-color: rgb(68, 68, 68);
 $secondary-color: #6877a0;
 $show-home-image: true;
 $home-image: url(../images/pic1.jpg);
+$about-image: url(../images/pic6.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -28,7 +29,27 @@ $background-opacity: 0.9;
             }
         }
     }
+    @if $show-home-image {
+        &#bg-img-about {
+            background: $about-image;
+            background-attachment: fixed;
+            background-size: cover ;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right:0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-color: rgba($primary-color, $background-opacity);
+
+            }
+        }
+    }
 }
+
 
 * {
     box-sizing: border-box;
@@ -45,8 +66,9 @@ body {
 }
 
 .portrait {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
+    padding: 25px;
     background: url(../images/headshot.jpg);
     border-radius: 50%;
     border: solid 3px $secondary-color;
@@ -205,6 +227,8 @@ main {
 
 .bio-image {
     grid-area: bioimage;
+    width: 275px;
+    height: 275px;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
@@ -288,12 +312,6 @@ main {
     .menu-branding {
       height: 25vh;
       transform: translate3d(100%, 0, 0);
-  
-      .portrait {
-        background: url('../img/portrait_small.jpg');
-        width: 150px;
-        height: 150px;
-      }
     }
   
     .about-info {
