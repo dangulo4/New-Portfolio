@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dangulo4/New-Portfolio#readme",
   "dependencies": {
+    "minimist": "^1.2.5",
     "node-sass": "^4.13.1"
   }
 }
