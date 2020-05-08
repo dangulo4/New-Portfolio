@@ -10,11 +10,7 @@ body {
   font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
   line-height: 1.25;
 }
-/* body#bg-img {
-  background: url(../images/pic1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-} */
+
 body#bg-img:after {
   content: '';
   position: absolute;
@@ -38,7 +34,7 @@ body#bg-img-about:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(68, 68, 68, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .portrait {
@@ -47,7 +43,7 @@ body#bg-img-about:after {
   padding: 25px;
   background: url(../images/headshot.jpg);
   border-radius: 50%;
-  border: solid 3px #6877a0;
+  border: solid 3px lightsalmon;
 }
 
 .icons {
@@ -90,7 +86,7 @@ header {
 }
 
 .text-secondary {
-  color: #6877a0 !important;
+  color: lightsalmon !important;
 }
 
 main {
@@ -104,7 +100,7 @@ main .icons a {
   padding: 0.4rem;
 }
 main .icons a:hover {
-  color: #6877a0;
+  color: lightsalmon;
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -173,7 +169,7 @@ main#home h1 {
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: #6877a0;
+  color: lightsalmon;
 }
 .menu .nav-link {
   display: inline-block;
@@ -186,7 +182,7 @@ main#home h1 {
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: #6877a0;
+  color: lightsalmon;
 }
 
 .about-info {
@@ -204,7 +200,7 @@ main#home h1 {
   height: 275px;
   margin: auto;
   border-radius: 50%;
-  border: #6877a0 3px solid;
+  border: lightsalmon 3px solid;
 }
 
 .bio {
@@ -227,7 +223,7 @@ main#home h1 {
 .job {
   background: rgba(74, 74, 74, 0.5);
   padding: 0.5rem;
-  border-bottom: #6877a0 5px solid;
+  border-bottom: lightsalmon 5px solid;
 }
 
 .contact-container {
@@ -264,8 +260,8 @@ main#home h1 {
 .btn:hover,
 .btn-dark:hover,
 .btn-light:hover {
-  background: #6877a0;
-  color: set-text-color(#6877a0);
+  background: lightsalmon;
+  color: set-text-color(lightsalmon);
 }
 
 .btn-dark {
