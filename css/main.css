@@ -22,7 +22,7 @@ body#bg-img:after {
   background-color: #000;
 }
 body#bg-img-about {
-  background: url(../images/pic6.jpg);
+  background: url(../images/cactus.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
